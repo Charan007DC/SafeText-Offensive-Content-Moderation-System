@@ -1,0 +1,11 @@
+# SafeText/requirements.txt
+torch>=2.0
+transformers>=4.30
+datasets>=2.10
+scikit-learn
+pandas
+numpy
+fastapi
+uvicorn[standard]
+python-dotenv
+streamlit

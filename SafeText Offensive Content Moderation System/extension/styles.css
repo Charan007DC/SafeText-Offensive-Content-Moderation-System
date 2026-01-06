@@ -1,0 +1,84 @@
+/* Sidebar styling */
+#safetext-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100vh;
+  background: #1a1a1a;
+  color: white;
+  z-index: 10000;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+  font-family: Arial, sans-serif;
+}
+
+#safetext-sidebar h2 {
+  background: #2d2d2d;
+  padding: 15px;
+  margin: 0;
+  border-bottom: 1px solid #444;
+}
+
+#safetext-sidebar .analysis-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.analysis-item:hover {
+  background: #252525;
+}
+
+.analysis-item.toxic {
+  border-left: 4px solid #ff4444;
+}
+
+.analysis-item.moderate {
+  border-left: 4px solid #ffaa00;
+}
+
+.analysis-item.safe {
+  border-left: 4px solid #44ff44;
+}
+
+.analysis-text {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.confidence {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 3px;
+}
+
+/* Text highlighting on page */
+.safetext-toxic {
+  background-color: rgba(255, 68, 68, 0.2) !important;
+  position: relative;
+}
+
+.safetext-moderate {
+  background-color: rgba(255, 170, 0, 0.2) !important;
+}
+
+.safetext-safe {
+  background-color: rgba(68, 255, 68, 0.2) !important;
+}
+
+/* Close button */
+#close-sidebar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
